@@ -1,0 +1,75 @@
+\documentclass[SE,authoryear,toc]{lsstdoc}
+% lsstdoc documentation: https://lsst-texmf.lsst.io/lsstdoc.html
+\input{meta}
+
+% Package imports go here.
+
+% Local commands go here.
+
+%If you want glossaries
+%\input{aglossary.tex}
+%\makeglossaries
+
+\title{SIT-Com Observing Workflow Definition Working Group Charge}
+
+% Optional subtitle
+% \setDocSubtitle{A subtitle}
+
+\author{%
+Sandrine Thomas (She/Her)
+}
+
+\setDocRef{SITCOMTN-031}
+\setDocUpstreamLocation{\url{https://github.com/lsst-sitcom/sitcomtn-031}}
+
+\date{\vcsDate}
+
+% Optional: name of the document's curator
+% \setDocCurator{The Curator of this Document}
+
+\setDocAbstract{%
+The charge of the SIT-Com workflow working group is developed in response to the following JIRA ticket: https://jira.lsstcorp.org/browse/SITCOM-172
+
+We need a system to link observing tasks, scripts/notebooks, run planning, analysis, and ultimately reports. This could be somewhat analogous to the LVV project in jira, combined with some other tools (e.g. technotes). 
+
+A proposed system and workflow can be found at https://sitcomtn-019.lsst.io/
+
+}
+
+% Change history defined here.
+% Order: oldest first.
+% Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
+% See LPM-51 for version number policy.
+\setDocChangeRecord{%
+  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Sandrine Thomas (She/Her)}
+}
+
+
+\begin{document}
+
+% Create the title page.
+\maketitle
+% Frequently for a technote we do not want a title page  uncomment this to remove the title page and changelog.
+% use \mkshorttitle to remove the extra pages
+
+% ADD CONTENT HERE
+% You can also use the \input command to include several content files.
+
+\appendix
+% Include all the relevant bib files.
+% https://lsst-texmf.lsst.io/lsstdoc.html#bibliographies
+\section{References} \label{sec:bib}
+\renewcommand{\refname}{} % Suppress default Bibliography section
+\bibliography{local,lsst,lsst-dm,refs_ads,refs,books}
+
+% Make sure lsst-texmf/bin/generateAcronyms.py is in your path
+\section{Acronyms} \label{sec:acronyms}
+\input{acronyms.tex}
+% If you want glossary uncomment below -- comment out the two lines above
+%\printglossaries
+
+
+
+
+
+\end{document}
