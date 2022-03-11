@@ -12,7 +12,7 @@
 %\input{aglossary.tex}
 %\makeglossaries
 
-\title{SIT-Com Observing Workflow Definition Working Group Charge}
+\title{SIT-Com Observing Workflow Definition  - Working Group Charge}
 
 % Optional subtitle
  \setDocSubtitle{A subtitle}
@@ -56,47 +56,95 @@ A proposed system and workflow for night observing can be found at https://sitco
 
 
 \section{Introduction}
-The purpose of this document is to set-up a working group along with its charge to define the observatory workflows appropriate for commissioning with an eye on operation. The working group will start from the 24th cycle put together for the Observatory Operation Department in operation and extend it to the entire observatory. 
-For the night observing sequence, the group will use the observing task management workflow proposal, https://sitcomtn-019.lsst.io/. 
-Another existing element that needs a more refined workflow and prioritization is the operator issue reporting.
+The Rubin project requires a common understanding and vision regarding how the observatory will function during the commissioning phase. Throughout the construction era of the project, multiple documents have been created that describe the high-level strategy, all of which were subject of numerous agency reviews. However, the level of detail in these documents is not sufficient in describing the day-to-day operations required to complete the highly-active and dynamic commissioning phase. 
 
-\section{Working Group Scope}
-The scope of this work is to define the who, when and what. This means what information is required by whom to conduct the required daily or nightly activities. How is this information communicated and how do we ensure that the tasks have been completed before the next cycle. 
-There are different length cycles that need to be taken into account, in order of priority: 
-- The instant cycle 
-- The daily cycle
-- The longer term cycle (weekly?) linked to preventive maintenance
-Jira exists as a tool to allow the transfer of information. It is in scope of this working group to define a more efficient workflow and prioritization process. 
+\section{Working group main goal}
+To provide this fundamental structure, a small group of individuals representing key areas of the project are being assembled to build off the content and processes described in previous documents and ultimately deliver a draft of the Vera C. Rubin Observatory’s Concept of Operations (ConOps). Due to the immense breadth of the Rubin Project, and the desire to produce this document on an accelerated timescale, the initial draft is to be focused on the infrastructure and workflows required to continually observe every night, with feedback from all relevant contributing parties, over a ~30 day timescale. Excluded from this draft are the generation of data releases, official data products, alert streams, etc (TBR). In many cases, the ConOps document will be documenting processes that are already in place and working as well. However, it is expected that new procedures and/or support processes will need to be developed. The operational model described in this document is expected to be used through commissioning and into the operations phase, although minor adjustments and/or updates will be required as the processes grow and mature.
 
-The working group will deliver their report for May 31st 2022.
+Upon generation of an initial draft, the content will be circulated to the project management office and the subsystem leads to assess potential impacts, and assist in populating missing information, and to provide additional insight. Upon completion of this step, the document will be made available to  the project team. 
 
-\section{Charge}
-The working group will answer the following questions in a form of a report:
-\begin{enumerate}
-\item{Summarize the status of the workflow using existing documentation: 24h definition, Jira OBS project, operation rehearsals}
-\item{Defines what information is needed to be conveyed from one activity to another? This includes the definition of the observing plans, the down stream processing, required fixes...} 
-\item{Define the roles and responsibilities of the people in charge of transferring information and making decision at a given time?}
-\item{List the tooling (existing or new) needed  to enable this workflow?. This includes the way we will handle the notebooks created for commissioning / testing and the process to archive them?}
-\end{enumerate}
+\section{Detailed deliverables}
+The ConOps shall address the following topics:
 
-It might be useful to create different reports depending on the cycle length defined in the scope of work.
+\subsection{Required interactions between personnel and the Rubin teams}
+The goal is to provide feedback to the observatory commissioning over multiple time intervals up to 30 days in duration, including:
+\begin{itemize}
+\item Hand-off between shifts, both during weekdays and on weekends
+\item Feedback from downstream processing teams, on the ~24 hr, 1 week, and 30 day time intervals
+\item How/when software/network/hardware updates/rollouts are performed
+\item Who are the key people (titles), and what are their roles/responsibilities?
+\end{itemize}
 
-In the execution of this charge the Working Group is requested to reach out to other stakeholders in their deliberations and evaluations.
-The outcome from this working will be a document that reports on the charge items indicated above.
+\subsection{Personnel scheduling}
+\begin{itemize}
+\item Coordination of Summit Presence/Personnel, specifically commissioning/nighttime support. This includes the organization of hotels and transportation.
+\item Coordination of remote support, their expectations, what are the rules/guidelines for remote operations?
+\item How long is a run, who supports on-site, from afar etc
+\end{itemize}
 
-\section{Proposed Working Group Members}
-\begin{enumerate}
-\item Patrick Ingraham (Chair): SIT-Com coordinator 
-\item Robert: SIT-Com coordinator
-\item Frossie: Data management 
-\item Alysha: Observing Specialist
-\item Holger: System Engineering and Summit Operation
-\end{enumerate}
 
-Members of the project office are welcome to attend when possible. 
-%Colin Slater? or Jeff Carlin?
-%Chuck
-%Michael Reuter
+\subsection{Daytime Task Planning}
+\begin{itemize}
+\item What is the plan of the day, how do those tasks get decided upon, prioritized and scheduled?
+\item Includes reported issues from the night crew(s) maintenance, engineering tasks, calibration start/finish
+\item Desired tasks from the different subsystems
+\item What sorts of reports are generated? What can be put in a jira ticket versus what requires a more formal communication
+\item What information gets communicated to the night crew(s), and via what mechanism?
+\end{itemize}
+
+\subsection{Nighttime troubleshooting procedures}
+\begin{itemize}
+\item How faults/issues get documented, tracked, addressed, and closed
+\item What are the types of issues that will be encountered?
+\item What is the workflow to deal with these different scenarios?
+\item How does it differ with urgency or timescale of the fix?
+\item When and in what situation(s) should observers call someone? Who do they call? How do they do it? 
+\item What is the expectation of on-call personnel, including the impact on duties the following day(s)
+\item What tools are on-call personnel expected to have regular access to?
+\item VPN, cell phones, WhatsApp etc
+\end{itemize}
+
+\subsection{Night time Planning}
+\begin{itemize}
+\item What does a night plan physically look like?
+\item Who manages the generation of such a plan?
+\item How are the activities decided upon?
+\item Who are the stakeholders, how do they make their arguments and provide input to the plan?
+\item Who has the authority to make the final decision in the event of a conflict?
+\item How are tests prepared? What is expected to have been done prior to execution on-sky?
+\item Scripts? Notebooks? Testing on TTS?
+\item What is the workflow (or workflows) after the test has been performed?
+\item What level of on-the-fly decision making is expected of the observers?
+\end{itemize}
+
+
+\subsection{Observers and staff}
+\begin{itemize}
+\item What is the expectation of observers? What do we expect them to do? What do we expect them to know/be able to diagnose, and when to ask for help?
+\item What are the primary interfaces we expect them to use, and their required skill levels?
+\item What do we expect to be happening in the control room (and remotely)?
+\end{itemize}
+
+\subsection{Tooling}
+\begin{itemize}
+\item What tools are required to facilitate the workflows/processes discussed and/or derived above?
+\item What new functionality is required, and by when?
+\end{itemize}
+
+
+
+\section{Potential Contributors}
+The following list of team member spread over the full project to ensure good coverage of science cases. 
+Richard/Stuart (Rubin Ops + Camera input)\\
+Patrick (represents T\&S, worked on Rubin cross-subsystem challenges and AuxTel ops for years)\\
+Margaux (SLAC input, understand Summit processes/people etc)\\
+Eric (Previous (AURA) observatory operations/operator experience)\\
+Holger (previous (external) observatory experience, represents SE )\\
+Frossie (Observatory Software/IT-ish person)\\
+
+During the generation of this charge, we found it useful to consider the operation of the observatory beginning from placing a completed night-plan to the first observing shift. We assumed the night plan, symbolized by a piece of paper, had all the required information on it for that given night, then thought about each transition, communication and potential situation that arose while trying to execute the plan. The process continued through the night shifts, day shifts, and ultimately finished by including everything required in order to generate and present a new plan; effectively closing the loop. The group is welcome to attack this charge as they see fit, but one might consider this as a possible approach.
+
+
 
 \appendix
 % Include all the relevant bib files.
