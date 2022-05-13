@@ -12,13 +12,14 @@
 %\input{aglossary.tex}
 %\makeglossaries
 
-\title{SIT-Com Observing Workflow Definition  - Working Group Charge}
+\title{SIT-Com Observatory Workflows Charge}
 
 % Optional subtitle
- \setDocSubtitle{A subtitle}
+%  \setDocSubtitle{A subtitle}
 
 \author{%
 Sandrine Thomas (She/Her)
+Patrick Ingraham
 }
 
 \setDocRef{SITCOMTN-031}
@@ -27,21 +28,24 @@ Sandrine Thomas (She/Her)
 \date{\vcsDate}
 
 % Optional: name of the document's curator
-% \setDocCurator{The Curator of this Document}
+\setDocCurator{Patrick Ingrahamt}
 
 \setDocAbstract{%
-The charge of the SIT-Com workflow working group is developed in response to the following JIRA ticket: https://jira.lsstcorp.org/browse/SITCOM-172
-We need a system to link observing tasks, scripts/notebooks, run planning, analysis, and ultimately reports. This could be somewhat analogous to the LVV project in jira, combined with some other tools (e.g. technotes). 
-A proposed system and workflow for night observing can be found at https://sitcomtn-019.lsst.io/
+The charge of this working group is developed in response to the following JIRA ticket: \href{https://jira.lsstcorp.org/browse/SITCOM-172}.\\
+The deliverable of this working group is a document describing the high-level processes by which the different groups of the observatory collaborate to plan and execute daytime and nighttime operations; effectively a Concept of Operations but reduced in scope to focus on the required workflows to support continuous observing over a 30-day time interval.
+This includes items such as developing observing plans, prioritizing activities, documentation of observing test execution(s), then tracking the analysis and report generation.
+Many different workflows are already in use throughout the observatory, but with a focus in daytime construction activities.
+This working group aims to merge the already existing techniques with the required interactions for nighttime coordination to help facilitate the 24/7 operation of the facility.
+% A proposed system and workflow for night observing can be found at https://sitcomtn-019.lsst.io/
 }
 
 % Change history defined here.
 % Order: oldest first.
 % Fields: VERSION, DATE, DESCRIPTION, OWNER NAME.
 % See LPM-51 for version number policy.
-%\setDocChangeRecord{%
-%  \addtohist{1}{YYYY-MM-DD}{Unreleased.}{Sandrine Thomas (She/Her)}
-%}
+\setDocChangeRecord{%
+ \addtohist{1}{2022-05-13}{Initial Draft}{Sandrine Thomas (She/Her)}
+}
 
 
 \begin{document}
@@ -56,12 +60,20 @@ A proposed system and workflow for night observing can be found at https://sitco
 
 
 \section{Introduction}
-The Rubin project requires a common understanding and vision regarding how the observatory will function during the commissioning phase. Throughout the construction era of the project, multiple documents have been created that describe the high-level strategy, all of which were subject of numerous agency reviews. However, the level of detail in these documents is not sufficient in describing the day-to-day operations required to complete the highly-active and dynamic commissioning phase. 
+The Rubin project requires a common understanding and vision regarding how the observatory will function during the commissioning phase. 
+Throughout the construction era of the project, multiple documents have been created that describe the high-level strategy, all of which were subject of numerous agency reviews. 
+However, the level of detail in these documents is not sufficient in describing the day-to-day operations required to complete the highly-active and dynamic commissioning phase. 
 
 \section{Working group main goal}
-To provide this fundamental structure, a small group of individuals representing key areas of the project are being assembled to build off the content and processes described in previous documents and ultimately deliver a draft of the Vera C. Rubin Observatory’s Concept of Operations (ConOps). Due to the immense breadth of the Rubin Project, and the desire to produce this document on an accelerated timescale, the initial draft is to be focused on the infrastructure and workflows required to continually observe every night, with feedback from all relevant contributing parties, over a ~30 day timescale. Excluded from this draft are the generation of data releases, official data products, alert streams, etc (TBR). In many cases, the ConOps document will be documenting processes that are already in place and working as well. However, it is expected that new procedures and/or support processes will need to be developed. The operational model described in this document is expected to be used through commissioning and into the operations phase, although minor adjustments and/or updates will be required as the processes grow and mature.
+To provide this fundamental structure, a small group of individuals representing key areas of the project are being assembled to build off the content and processes described in previous documents and ultimately deliver a draft of the Vera C. Rubin Observatory's Concept of Operations (ConOps).
+Due to the immense breadth of the Rubin Project, and the desire to produce this document on an accelerated timescale, the initial draft is to be focused on the infrastructure and workflows required to continually observe every night, with feedback from all relevant contributing parties, over a ~30 day timescale. 
+Excluded from this draft are the generation of data releases, official data products, alert streams, etc (TBR). 
+In many cases, the ConOps document will be documenting processes that are already in place and working as well. 
+However, it is expected that new procedures and/or support processes will need to be developed. 
+The operational model described in this document is expected to be used through commissioning and into the operations phase, although minor adjustments and/or updates will be required as the processes grow and mature.
 
-Upon generation of an initial draft, the content will be circulated to the project management office and the subsystem leads to assess potential impacts, and assist in populating missing information, and to provide additional insight. Upon completion of this step, the document will be made available to  the project team. 
+Upon generation of an initial draft, the content will be circulated to the project management office and the subsystem leads to assess potential impacts, and assist in populating missing information, and to provide additional insight. 
+Upon completion of this step, the document will be made available to the project team. 
 
 \section{Detailed deliverables}
 The ConOps shall address the following topics:
@@ -77,7 +89,8 @@ The goal is to provide feedback to the observatory commissioning over multiple t
 
 \subsection{Personnel scheduling}
 \begin{itemize}
-\item Coordination of Summit Presence/Personnel, specifically commissioning/nighttime support. This includes the organization of hotels and transportation.
+\item Coordination of Summit Presence/Personnel, specifically commissioning/nighttime support. 
+      This includes the organization of hotels and transportation.
 \item Coordination of remote support, their expectations, what are the rules/guidelines for remote operations?
 \item How long is a run, who supports on-site, from afar etc
 \end{itemize}
@@ -98,7 +111,9 @@ The goal is to provide feedback to the observatory commissioning over multiple t
 \item What are the types of issues that will be encountered?
 \item What is the workflow to deal with these different scenarios?
 \item How does it differ with urgency or timescale of the fix?
-\item When and in what situation(s) should observers call someone? Who do they call? How do they do it? 
+\item When and in what situation(s) should observers call someone? 
+      Who do they call? 
+      How do they do it? 
 \item What is the expectation of on-call personnel, including the impact on duties the following day(s)
 \item What tools are on-call personnel expected to have regular access to?
 \item VPN, cell phones, WhatsApp etc
@@ -120,7 +135,8 @@ The goal is to provide feedback to the observatory commissioning over multiple t
 
 \subsection{Observers and staff}
 \begin{itemize}
-\item What is the expectation of observers? What do we expect them to do? What do we expect them to know/be able to diagnose, and when to ask for help?
+\item What is the expectation of observers? What do we expect them to do? 
+      What do we expect them to know/be able to diagnose, and when to ask for help?
 \item What are the primary interfaces we expect them to use, and their required skill levels?
 \item What do we expect to be happening in the control room (and remotely)?
 \end{itemize}
@@ -142,7 +158,10 @@ Eric (Previous (AURA) observatory operations/operator experience)\\
 Holger (previous (external) observatory experience, represents SE )\\
 Frossie (Observatory Software/IT-ish person)\\
 
-During the generation of this charge, we found it useful to consider the operation of the observatory beginning from placing a completed night-plan to the first observing shift. We assumed the night plan, symbolized by a piece of paper, had all the required information on it for that given night, then thought about each transition, communication and potential situation that arose while trying to execute the plan. The process continued through the night shifts, day shifts, and ultimately finished by including everything required in order to generate and present a new plan; effectively closing the loop. The group is welcome to attack this charge as they see fit, but one might consider this as a possible approach.
+During the generation of this charge, we found it useful to consider the operation of the observatory beginning from placing a completed night-plan to the first observing shift. 
+We assumed the night plan, symbolized by a piece of paper, had all the required information on it for that given night, then thought about each transition, communication and potential situation that arose while trying to execute the plan. 
+The process continued through the night shifts, day shifts, and ultimately finished by including everything required in order to generate and present a new plan; effectively closing the loop. 
+The group is welcome to attack this charge as they see fit, but one might consider this as a possible approach.
 
 
 
